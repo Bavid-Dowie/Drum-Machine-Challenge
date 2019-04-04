@@ -55,14 +55,13 @@ class App extends Component {
   }
 
   render() {
-    console.log(`Sounds:`, Sounds)
     const buttons = []
     for (let i = 0; i < this.state.sounds.length; i++) {
       buttons.push(<Button sound={this.state.sounds[i]}
         playSound={this.playSound} />)
     }
     return (
-      <div className='button-container'>
+      <div className='button-container' key={buttons.id}>
         {buttons}
       </div>
     );

@@ -20,7 +20,6 @@ code {
   display: grid;
   grid-gap: 10px;
   grid-template: auto/ 1fr 1fr 1fr 1fr;
-
 }
 
 .button {
@@ -34,4 +33,5 @@ code {
   text-transform: uppercase;
   background: linear-gradient(to top, rgb(255, 253, 131), rgb(255, 230, 0));
   box-shadow: 3px 3px #ffd000;
+  cursor: pointer;
 }
